@@ -12,7 +12,8 @@
 
         <Label Text="Cálculo da Diária"
                FontFamily="Kalam"
-               FontSize="50"
+               FontSize="30"
+               HorizontalTextAlignment="Center"
                TextColor="{StaticResource Primary}" />
 
         <Frame Padding="10">
@@ -58,7 +59,8 @@
                                TextColor="{StaticResource Black}"/>
 
                         <Picker x:Name="pck_quarto"
-                                Title="Selecione sua Acomodação" />
+                                Title="Selecione sua Acomodação"
+                                ItemDisplayBinding="{Binding Descricao}"/>
                     </VerticalStackLayout>
                 </Frame>
 
@@ -74,6 +76,7 @@
                         <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
                             <Label Text="Check-in:" />
                             <DatePicker x:Name="dtpck_checkin"
+                                        DateSelected="dtpck_checkinn_DataSelected"
                                         Format="dd/MM/yyyy" />
                         </HorizontalStackLayout>
 
