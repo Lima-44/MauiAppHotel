@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Sobre"
+             Title="Sobre">
+    
+    <Frame Padding="10" Margin="10" BackgroundColor="Black">
+        
+        <VerticalStackLayout>
+            <Label 
+            Text="Sobre"
+            FontSize="50"
+            TextColor="White"
+            Margin="20"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+            
+
+            <Label 
+                Text="Desenvolvido por: Leandro Rosa Lima"
+                FontSize="30"
+                Margin="50"
+                VerticalOptions="Center"
+                HorizontalOptions="EndAndExpand"
+                TextColor="White"/>
+
+            <Label
+                Text="Ano: 2024"
+                FontSize="30"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                TextColor="White"/>
+
+            <Button Text="Voltar"
+                    Margin="50"
+                    Clicked="Button_Clicked"/>
+
+        </VerticalStackLayout>
+        
+    </Frame>
+</ContentPage>
